@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>media querry lecture 2</title>
+    <style>
+        @media (max-width:300px){
+            body{
+                background-color: blanchedalmond;
+            }
+            div::after{
+                content: "sutable for the phone";
+            }
+            div{
+                text-align: center;
+                font-size: x-large;
+            }
+        }
+        @media(min-width: 600px)
+            {
+                body{
+                    background-color: aquamarine;
+                }
+                div::after{
+                    content: "the bigger one";
+                }
+                div{
+                    text-align: center;
+                    font-size: x-large;
+                }
+            }
+        @media(min-width:768px)
+        {
+            body{
+                background-color: hotpink;
+            }
+            div::after{
+                content: "this is for tab";
+            }
+            div{
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div></div>
+</body>
+</html>

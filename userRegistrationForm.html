@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User registration</title>
+</head>
+<body>
+    <form method="get">
+        <fieldset>
+            <legend>User registration form</legend>
+            <label for="name">Enter your name</label>
+            <input type="text" name="name" id="name" placeholder="name" readonly disabled>
+            <br>
+            <label for="email">Enter your email</label>
+            <input type="email" name="email" id="email" placeholder="a@.com" autofocus>
+            <br>
+            <label for="password">Enter your password</label>
+            <input type="password" name="password" id="password">
+            <br>
+            <label for="dob">Enter your dob</label>
+            <input type="date" name="dob" id="dob">
+            <br>
+            Gender
+            <br>
+            <label for="male">male</label>
+            <input type="radio" name="gender" id="male" value="male">
+            <br>
+            <label for="female">female</label>
+            <input type="radio" name="gender" id="female" value="female">
+            <br>
+            <label for="other">other</label>
+            <input type="radio" name="gender" id="other" value="other">
+            <br>
+            <input type="number" min="0" max="5">
+            <br>
+            <input type="submit" value="submit form">
+        </fieldset>
+    </form>
+</body>
+</html>

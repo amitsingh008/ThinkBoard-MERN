@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emplementation of media query </title>
+    <style>
+        body{
+            background-color: red;
+        }
+        div {
+            font-size: x-large;
+            text-align: center;
+        }
+        div::after{
+            content: "welcome to the demo";
+        }
+        @media (min-width:744px){
+           /* if viewport is at least 900px then this style will apply */
+           body{
+            background-color: aqua;
+           }
+           div::after{
+            content: "woah its working";
+        }
+        }
+        @media (min-width:900px){
+           /* if viewport is at least 900px then this style will apply */
+           body{
+            background-color: olive;
+           }
+           div::after{
+            content: "woah its smaller ";
+        }
+        }
+        @media (max-width:400px)
+        {
+           body{
+            background-color: greenyellow;
+           }
+        }
+    </style>
+</head>
+<body>
+    <div></div>
+    <div></div>
+    <div></div>
+</body>
+</html>

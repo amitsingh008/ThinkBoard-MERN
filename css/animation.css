@@ -1,0 +1,38 @@
+div{
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    position: relative;
+    animation-name: colorchange;
+    animation-duration: 4s;
+    animation-delay: 1s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes colorchange {
+    0%{
+        background-color: aquamarine;
+         top: 0px;
+         left: 0px;
+    }
+    25%{
+        background-color: gold;
+        top: 0%;
+        left: 200px;
+    }
+    50%{
+        background-color: hotpink; 
+        top: 200px;
+        left: 200px;
+    }
+    75%{
+        background-color: hotpink;
+        top: 200px;
+        right: 0px;
+    }
+    100%{
+        background-color: yellow;
+        top: 0px;
+        left: 0px;   
+    }
+}
