@@ -10,11 +10,11 @@ const CreatePage = () => {
   const navigate= useNavigate();
   const handleSubmit = async(e)=>{
     e.preventDefault();
-    // if(!title.trim() || !content.trim())
-    // {
-    //   toast.error("All fields are required");
-    //   return;
-    // }
+    if(!title.trim() || !content.trim())
+    {
+      toast.error("All fields are required");
+      return;
+    }
     setLoading(true);
     try{
       await api.post("/notes",{
